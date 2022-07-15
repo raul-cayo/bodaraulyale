@@ -1,3 +1,184 @@
+html {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #333338;
+}
+
+body {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+main.paper-bg {
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5FA;
+    border-radius: 2px;
+    margin: 10px;
+    padding-top: 140px;
+    position: relative;
+}
+
 h1 {
-    color: midnightblue;
+    font-family: 'Allura';
+    font-size: 70px;
+    line-height: 1.1;
+    margin: 0 0 80px 0;
+    text-align: center;
+}
+
+h1 span {
+    display: block;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.horizontal-divider {
+    height: 3px;
+    background-color: gold;
+    border-radius: 2px;
+    margin: 16px auto;
+    width: 80%;
+}
+
+.date-hour {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.location {
+    background-color: #65656A;
+    padding: 30px 20px;
+}
+
+.location a {
+    color: #F5F5FA;
+    cursor: pointer;
+    border: 2px solid #F5F5FA;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location a:hover {
+    color: #65656A;
+    border-color: #65656A;
+    background-color: #F5F5FA;
+}
+
+.location a span {
+    display: block;
+    margin-left: 16px;
+    position: relative;
+    font-size: 16px;
+}
+
+.schedule {
+    display: flex;
+    justify-content: center;
+}
+
+.schedule ol {
+    list-style: none;
+    padding: 20px;
+}
+
+.schedule ol li {
+    margin-left: 0;
+    line-height: 2;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #71A06A;
+    padding: 20px 20px;
+}
+
+.timer .wording {
+    display: flex;
+}
+
+.timer .clock {
+    display: flex;
+}
+
+.timer p {
+    color: #F5F5FA;
+    margin: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 25%;
+}
+
+.timer .wording p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.timer .clock p {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.info {
+    padding: 20px;
+}
+
+.info p {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.info ul {
+    margin-right: 20px;
+}
+
+.info ul li {
+    margin: 8px 0;
+    text-align: justify;
+}
+
+.thanks .img-container {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.thanks img {
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+}
+
+.thanks p {
+    color: #F5F5FA;
+    background: rgb(113, 160, 106);
+    background: linear-gradient(0deg,
+        rgba(113, 160, 106, 1) 0%,
+        rgba(113, 160, 106, 1) 70%,
+        rgba(113, 160, 106, 0.1) 100%
+    );
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 0 0;
+    padding: 90px 20px 30px 20px;
+    position: relative;
+    bottom: 60px;
 }
