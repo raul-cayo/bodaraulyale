@@ -19,11 +19,38 @@ main.paper-bg {
     position: relative;
 }
 
-/* .invitation-hero img {
+.invitation-hero {
+    overflow: hidden;
+    position: relative;
+}
+
+.invitation-hero img {
     position: absolute;
-    width: 200px;
-    height: auto;
-} */
+}
+
+.invitation-hero .bay-leaves {
+    height: 218px;
+    width: auto;
+    left: -25px;
+    top: -36px;
+    transform: rotate(105deg);
+}
+
+.invitation-hero .leaf-branch-top {
+    height: 110px;
+    width: auto;
+    left: 49px;
+    top: -45px;
+    transform: rotate(106deg) rotateY(180deg);
+}
+
+.invitation-hero .leaf-branch-bottom {
+    height: 140px;
+    width: auto;
+    left: -53px;
+    top: 54px;
+    transform: rotate(151deg);
+}
 
 .invitation-hero h1 {
     font-family: 'Allura';
@@ -102,7 +129,8 @@ main.paper-bg {
     display: flex;
     justify-content: center;
 
-    border: 3px solid gold;
+    border-top: 3px solid gold;
+    border-bottom: 3px solid gold;
     margin: 60px 50px 20px 50px;
     padding: 30px 0;
 }
@@ -119,6 +147,22 @@ main.paper-bg {
     font-size: 32px;
     margin-left: 0;
     line-height: 1.4;
+}
+
+.schedule .lavender-left,
+.schedule .lavender-right {
+    position: absolute;
+    height: 120px;
+    width: auto;
+}
+
+.schedule .lavender-left {
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+.schedule .lavender-right {
+    right: 0;
 }
 
 .timer {
@@ -179,13 +223,14 @@ main.paper-bg {
 .picture-container {
     overflow: hidden;
     position: relative;
-    height: 60vh;
+    height: 450px;
     width: 100%;
 }
 
 .picture-container img {
     object-fit: cover;
-    object-position: bottom;
+    object-position: center bottom;
+    height: 100%;
     width: 100%;
 }
 
@@ -202,6 +247,8 @@ main.paper-bg {
 }
 
 .thanks {
+    position: relative;
+    overflow: hidden;
     background-color: #B0B08E;
     border-radius: 0 0 2px 2px;
 }
@@ -216,4 +263,12 @@ main.paper-bg {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 20px;
+}
+
+.thanks .peace-lily-leaves {
+    position: absolute;
+    height: 140px;
+    width: auto;
+    right: -7px;
+    bottom: -14px;
 }
