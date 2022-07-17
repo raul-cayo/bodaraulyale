@@ -3,6 +3,9 @@
 /* Document
    ========================================================================== */
 
+  * {
+    box-sizing: border-box;
+  }
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -51,7 +54,6 @@ h1 {
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -247,13 +249,11 @@ textarea {
 }
 
 /**
- * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
