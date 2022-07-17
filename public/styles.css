@@ -40,7 +40,9 @@ main.paper-bg {
 .invitation-hero h2 {
     font-size: 16px;
     font-weight: 400;
-    margin: 10px 20px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    max-width: 310px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -54,9 +56,10 @@ main.paper-bg {
 }
 
 .invitation-hero .date {
+    letter-spacing: 1px;
+    margin: 0 0 120px 0;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 80px;
 }
 
 .location {
@@ -65,20 +68,20 @@ main.paper-bg {
 }
 
 .location a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: #F5F5FA;
     cursor: pointer;
     border: 2px solid #F5F5FA;
-    border-radius: 10px;
+    border-radius: 4px;
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 320px;
     padding: 16px;
     text-align: center;
     text-decoration: none;
     transition: all 0.5s ease;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .location a:hover {
@@ -88,10 +91,10 @@ main.paper-bg {
 }
 
 .location a span {
-    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
     margin-left: 16px;
     position: relative;
-    font-size: 16px;
 }
 
 .schedule {
