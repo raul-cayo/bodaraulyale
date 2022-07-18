@@ -265,10 +265,55 @@ main.paper-bg {
     font-size: 20px;
 }
 
-.thanks .peace-lily-leaves {
+.thanks .peace-lily-leaves-left {
+    position: absolute;
+    height: 90px;
+    width: auto;
+    left: -16px;
+    bottom: -15px;
+    transform: rotateY(180deg) rotate(-15deg);
+}
+
+.thanks .peace-lily-leaves-right {
+    position: absolute;
+    height: 130px;
+    width: auto;
+    right: -30px;
+    bottom: -22px;
+    transform: rotate(-35deg);
+}
+
+.thanks .bird-of-paradise {
     position: absolute;
     height: 140px;
     width: auto;
-    right: -7px;
+    left: 60px;
+    bottom: -21px;
+    transform: rotate(14deg);
+}
+
+.thanks .wildflower-1 {
+    position: absolute;
+    height: 105px;
+    width: auto;
+    left: 175px;
     bottom: -14px;
+    transform: rotateY(180deg);
+}
+
+.thanks .wildflower-2 {
+    position: absolute;
+    height: 85px;
+    width: auto;
+    left: 220px;
+    bottom: -14px;
+    transform: rotate(10deg);
+}
+
+.thanks .wildflower-3 {
+    position: absolute;
+    height: 90px;
+    width: auto;
+    right: 77px;
+    bottom: -24px;
 }
