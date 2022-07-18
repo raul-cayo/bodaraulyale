@@ -1,0 +1,85 @@
+img.plant {
+  position: absolute;
+  width: auto;
+}
+
+/******** Invitation Hero ********/
+
+.plant.bay-leaves {
+  height: 227px;
+  left: -32px;
+  top: -45px;
+  transform: rotate(105deg);
+}
+
+.plant.leaf-branch-top {
+  height: 110px;
+  left: 49px;
+  top: -45px;
+  transform: rotate(106deg) rotateY(180deg);
+}
+
+.plant.leaf-branch-bottom {
+  height: 140px;
+  left: -53px;
+  top: 54px;
+  transform: rotate(151deg);
+}
+
+
+/******** Schedule ********/
+
+.plant.lavender-left {
+    height: 120px;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+.plant.lavender-right {
+    height: 120px;
+    right: 0;
+}
+
+
+/******** Thanks ********/
+
+.plant.peace-lily-leaves-left {
+  height: 90px;
+  left: -16px;
+  bottom: -15px;
+  transform: rotateY(180deg) rotate(-15deg);
+}
+
+.plant.peace-lily-leaves-right {
+  height: 130px;
+  right: -30px;
+  bottom: -22px;
+  transform: rotate(-35deg);
+}
+
+.plant.bird-of-paradise {
+  height: 140px;
+  left: 60px;
+  bottom: -21px;
+  transform: rotate(14deg);
+}
+
+.plant.wildflower-1 {
+  height: 105px;
+  left: 175px;
+  bottom: -14px;
+  transform: rotateY(180deg);
+}
+
+.plant.wildflower-2 {
+  height: 85px;
+  left: 220px;
+  bottom: -14px;
+  transform: rotate(10deg);
+}
+
+.plant.wildflower-3 {
+  height: 90px;
+  right: 77px;
+  bottom: -24px;
+}
