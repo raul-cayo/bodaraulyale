@@ -43,17 +43,35 @@ img.plant {
 
 /******** Schedule ********/
 
-.plant.lavender-left {
-    width: 120px;
-    left: 0;
-    transform: rotateY(180deg);
+.plant.eucalyptus-left { 
+    height: 120px;
+    width: 90px;
+    left: -55px;
+    top: 50%;
+    transform: rotateY(180deg) translateY(-50%);
 }
 
-.plant.lavender-right {
-    width: 120px;
-    right: 0;
+.plant.eucalyptus-right {
+    height: 120px;
+    width: 90px;
+    right: -55px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
+/******** Timer ********/
+
+.plant.monstera-leaf-left {
+  width: 90px;
+  left: -36px;
+  bottom: 4px;
+}
+
+.plant.monstera-leaf-right {
+  width: 90px;
+  right: -42px;
+  top: -2px;
+}
 
 /******** Thanks ********/
 
