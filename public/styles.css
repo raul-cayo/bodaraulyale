@@ -4,8 +4,9 @@ html {
 }
 
 body {
-    max-width: 480px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main.paper-bg {
@@ -14,8 +15,9 @@ main.paper-bg {
 
     background-color: #F5F5FA;
     border-radius: 2px;
-    box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.75);
     margin: 40px 10px;
+    max-width: 480px;
     position: relative;
 }
 
@@ -101,6 +103,7 @@ main.paper-bg {
     border-top: 3px solid gold;
     border-bottom: 3px solid gold;
     margin: 20px 50px;
+    overflow: hidden;
     padding: 30px 0;
     position: relative;
 }
@@ -125,7 +128,7 @@ main.paper-bg {
 
     background-color: #B0B08E;
     border-radius: 2px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     margin-left: -8px;
     overflow: hidden;
     padding: 20px 40px;
@@ -173,7 +176,7 @@ main.paper-bg {
 }
 
 .info li span {
-    font-weight: 600;   
+    font-weight: 600;
 }
 
 .picture-container {
@@ -197,9 +200,8 @@ main.paper-bg {
     height: 18vh;
     background: #B0B08E;
     background: linear-gradient(0deg,
-        #B0B08E 0%,
-        transparent  100%
-    );
+            #B0B08E 0%,
+            transparent 100%);
 }
 
 .thanks {
@@ -230,7 +232,7 @@ main.paper-bg {
     .invitation-hero h1 {
         font-size: 64px;
     }
-    
+
     .invitation-hero h2 {
         font-size: 15px;
         max-width: 290px;
@@ -239,11 +241,11 @@ main.paper-bg {
     .invitation-hero .date {
         font-size: 15px;
     }
-    
+
     .schedule ol {
         padding: 0 15px;
     }
-    
+
     .schedule li {
         font-size: 26px;
     }
@@ -255,7 +257,7 @@ main.paper-bg {
     .info {
         padding: 20px 16px;
     }
-    
+
     .thanks p {
         max-width: 275px;
         font-size: 18px;
@@ -267,7 +269,7 @@ main.paper-bg {
         font-size: 60px;
         margin: 140px 0 40px 0;
     }
-    
+
     .invitation-hero h2 {
         font-size: 14px;
         max-width: 272px;
@@ -277,7 +279,7 @@ main.paper-bg {
         font-size: 14px;
         margin: 0 0 115px 0;
     }
-    
+
     .location a span {
         letter-spacing: 0;
     }
@@ -286,11 +288,11 @@ main.paper-bg {
         margin: 20px 40px;
         padding: 20px 0;
     }
-    
+
     .schedule ol {
         padding: 0 12px;
     }
-    
+
     .schedule li {
         font-size: 24px;
     }
@@ -306,7 +308,7 @@ main.paper-bg {
     .info {
         padding: 14px;
     }
-    
+
     .info li {
         font-size: 13px;
         margin: 26px 0;
@@ -318,6 +320,11 @@ main.paper-bg {
         margin: 20px 6px;
     }
 
+    .timer {
+        margin-left: -5px;
+        width: calc(100% + 10px);
+    }
+
     .invitation-hero h1 {
         font-size: 55px;
     }
@@ -325,11 +332,11 @@ main.paper-bg {
     .location {
         padding: 30px 15px;
     }
-    
+
     .location a {
         padding: 16px 14px;
     }
-    
+
     .location a span {
         font-size: 13px;
         margin-left: 14px;
