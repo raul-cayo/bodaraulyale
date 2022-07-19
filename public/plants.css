@@ -109,3 +109,90 @@ img.plant {
   bottom: -32px;
   transform: rotate(-30deg);
 }
+
+@media only screen and (max-width: 400px) {
+  /******** Invitation Hero ********/
+
+  .plant.willow-eucalyptus-branch {
+    width: 192px;
+    left: -39px;
+    top: -35px;
+  }
+  
+  .plant.bay-leaves {
+    width: 198px;
+    right: -48px;
+    bottom: -50px;
+  }
+  
+  .plant.wild-branch-1 {
+    width: 100px;
+    left: 40px;
+    top: -42px;
+  }
+  
+  .plant.wild-branch-2 {
+    width: 100px;
+    left: -42px;
+    top: 72px;
+    transform: rotate(151deg);
+  }
+  
+  .plant.wild-branch-3 {
+    width: 100px;
+    right: 63px;
+    bottom: -43px;
+  }
+  
+  
+  /******** Schedule ********/
+  
+  .plant.eucalyptus-left,
+  .plant.eucalyptus-right {
+    height: 105px;
+    width: 80px;
+  }
+  
+  /******** Timer ********/
+  
+  .plant.monstera-leaf-left {
+    width: 75px;
+    left: -30px;
+  }
+  
+  .plant.monstera-leaf-right {
+    width: 80px;
+    right: -39px;
+    top: 2px;
+  }
+  
+  /******** Thanks ********/
+  
+  .plant.bird-of-paradise {
+    width: 140px;
+    left: -35px;
+    bottom: -25px;
+  }
+  
+  .plant.peace-lily-leaves-left {
+    width: 85px;
+    left: 76px;
+    bottom: -15px;
+  }
+  
+  .plant.wildflower-2 {
+    display: none;
+  }
+  
+  .plant.wildflower-3 {
+    width: 72px;
+    right: 67px;
+    bottom: -24px;
+  }
+  
+  .plant.peace-lily-leaves-right {
+    width: 125px;
+    right: -28px;
+    bottom: -32px;
+  }
+}
