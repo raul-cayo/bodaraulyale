@@ -106,6 +106,66 @@
             <img class="plant wildflower-3" src="/plants/wildflower-3.svg" />
         </div>
     </main>
+
+    <script>
+        const weddingDateTime = new Date('2023-01-14T18:00:00-06:00');
+
+        const daysDisplay = document.querySelector('.clock .days');
+        const hoursDisplay = document.querySelector('.clock .hours');
+        const minutesDisplay = document.querySelector('.clock .minutes');
+        const secondsDisplay = document.querySelector('.clock .seconds');
+
+        const second = 1000;
+        const minute = second * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+
+        function getTwoDigitsString(number) {
+            if (number < 10) {
+                return '0' + number.toString();
+            } else {
+                return number.toString();
+            }
+        }
+
+        function updateTimeLeft() {
+            setTimeout(updateTimeLeft, 1000);
+
+            const currentDateTime = new Date();
+            let daysLeft = 0;
+            let hoursLeft = 0;
+            let minutesLeft = 0;
+            let secondsLeft = 0;
+            let msLeft =  weddingDateTime - currentDateTime;
+            
+            if (msLeft > day) {
+                daysLeft = Math.floor(msLeft / day);
+                msLeft = msLeft % day;
+            }
+
+            if (msLeft > hour) {
+                hoursLeft = Math.floor(msLeft / hour);
+                msLeft = msLeft % hour;
+            }
+
+            if (msLeft > minute) {
+                minutesLeft = Math.floor(msLeft / minute);
+                msLeft = msLeft % minute;
+            }
+
+            if (msLeft > second) {
+                secondsLeft = Math.floor(msLeft / second);
+                msLeft = msLeft % second;
+            }
+
+            daysDisplay.innerHTML = getTwoDigitsString(daysLeft);
+            hoursDisplay.innerHTML = getTwoDigitsString(hoursLeft);
+            minutesDisplay.innerHTML = getTwoDigitsString(minutesLeft);
+            secondsDisplay.innerHTML = getTwoDigitsString(secondsLeft); 
+        }
+
+        updateTimeLeft();
+    </script>
 </body>
 
 </html>

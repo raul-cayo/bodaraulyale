@@ -43,20 +43,21 @@ img.plant {
 
 /******** Schedule ********/
 
-.plant.eucalyptus-left { 
-    height: 120px;
-    width: 90px;
-    left: -55px;
-    top: 50%;
-    transform: rotateY(180deg) translateY(-50%);
+.plant.eucalyptus-left,
+.plant.eucalyptus-right {
+  height: 120px;
+  width: 90px;
+  top: 50%;
+}
+
+.plant.eucalyptus-left {
+  left: -55px;
+  transform: rotateY(180deg) translateY(-50%);
 }
 
 .plant.eucalyptus-right {
-    height: 120px;
-    width: 90px;
-    right: -55px;
-    top: 50%;
-    transform: translateY(-50%);
+  right: -55px;
+  transform: translateY(-50%);
 }
 
 /******** Timer ********/
