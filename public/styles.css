@@ -61,7 +61,7 @@ main.paper-bg {
 
 .location {
     background-color: #333338;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     padding: 30px 20px;
 }
 
@@ -100,12 +100,17 @@ main.paper-bg {
     display: flex;
     justify-content: center;
 
-    border-top: 3px solid gold;
-    border-bottom: 3px solid gold;
-    margin: 20px 50px;
     overflow: hidden;
     padding: 30px 0;
     position: relative;
+}
+
+.horizontal-divider {
+    height: 3px;
+    background-color: gold;
+    border-radius: 2px;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .schedule ol {
@@ -162,6 +167,10 @@ main.paper-bg {
 
 .info {
     padding: 20px;
+}
+
+.info.first-info {
+    padding: 40px 20px 20px 20px;
 }
 
 .info ul {
@@ -280,12 +289,15 @@ main.paper-bg {
         margin: 0 0 115px 0;
     }
 
+    .location {
+        margin-bottom: 50px;
+    }
+
     .location a span {
         letter-spacing: 0;
     }
 
     .schedule {
-        margin: 20px 40px;
         padding: 20px 0;
     }
 
@@ -321,8 +333,8 @@ main.paper-bg {
     }
 
     .timer {
-        margin-left: -5px;
-        width: calc(100% + 10px);
+        margin-left: -4px;
+        width: calc(100% + 8px);
     }
 
     .invitation-hero h1 {

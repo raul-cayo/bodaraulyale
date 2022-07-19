@@ -51,12 +51,12 @@ img.plant {
 }
 
 .plant.eucalyptus-left {
-  left: -55px;
+  left: -5px;
   transform: rotateY(180deg) translateY(-50%);
 }
 
 .plant.eucalyptus-right {
-  right: -55px;
+  right: -5px;
   transform: translateY(-50%);
 }
 
@@ -194,5 +194,15 @@ img.plant {
     width: 125px;
     right: -28px;
     bottom: -32px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .plant.eucalyptus-left {
+    left: -10px;
+  }
+
+  .plant.eucalyptus-right {
+    right: -10px;
   }
 }
