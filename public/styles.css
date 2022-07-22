@@ -32,8 +32,8 @@ main.paper-bg {
     right: -76px;
     top: 25px;
     transform: rotate(45deg);
-    background-color: #d4af37;
-    border: 4px solid #d4af37;
+    background-color: #dbb42c;
+    border: 4px solid #dbb42c;
 }
 
 .invitation-hero .vip-banner p {
@@ -65,7 +65,7 @@ main.paper-bg {
 
 .invitation-hero .horizontal-divider {
     height: 3px;
-    background-color: #d4af37;
+    background-color: #dbb42c;
     border-radius: 2px;
     margin: 16px auto;
     width: 80%;
@@ -115,22 +115,40 @@ main.paper-bg {
     position: relative;
 }
 
+.horizontal-divider {
+    height: 3px;
+    background-color: #dbb42c;
+    border-radius: 2px;
+    margin: 0 auto;
+    width: 80%;
+}
+
 .schedule {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     overflow: hidden;
     padding: 30px 0;
     position: relative;
 }
 
-.horizontal-divider {
-    height: 3px;
-    background-color: #d4af37;
-    border-radius: 2px;
-    margin: 0 auto;
-    width: 80%;
+.schedule p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 50px;
 }
+
+.schedule p:first-of-type {
+    margin-top: 0;
+}
+
+.schedule .schedule-list {
+    display: flex;
+}
+
+
 
 .schedule ol {
     list-style: none;

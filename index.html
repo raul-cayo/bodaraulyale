@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/plants.css">
@@ -17,7 +17,7 @@
 <body>
     <main class="paper-bg">
         <div class="invitation-hero">
-            <h1>Raúl <br/>& </br>Alejandra</h1>
+            <h1>Raúl <br />& </br>Alejandra</h1>
             <h2>¡Nos casamos! Y nos gustaría que nos acompañes a celebrar.</h2>
             <div class="horizontal-divider"></div>
             <p class="date">14 de enero del 2023</p>
@@ -31,30 +31,36 @@
 
         <div class="location">
             <a href="https://goo.gl/maps/mEypNiRmRogip7dv8">
-                <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M12 10c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2m0-5c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3m-7 2.602c0-3.517 3.271-6.602 7-6.602s7 3.085 7 6.602c0 3.455-2.563 7.543-7 14.527-4.489-7.073-7-11.072-7-14.527m7-7.602c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602"/>
+                <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+                    viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12 10c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2m0-5c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3m-7 2.602c0-3.517 3.271-6.602 7-6.602s7 3.085 7 6.602c0 3.455-2.563 7.543-7 14.527-4.489-7.073-7-11.072-7-14.527m7-7.602c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602" />
                 </svg>
-                <span>Av. Álvaro Obregón 55<br/> 49440 San Luis Soyatlan, Jal.</span>
+                <span>Av. Álvaro Obregón 55<br /> 49440 San Luis Soyatlan, Jal.</span>
             </a>
         </div>
 
-        
+
         <div class="horizontal-divider"></div>
+
         <div class="schedule">
-            <ol class="events">
-                <li>Recepción</li>
-                <li>Ceremonia</li>
-                <li>Taquiza</li>
-            </ol>
-            <ol class="hours">
-                <li>6: 00 pm</li>
-                <li>6: 30 pm</li>
-                <li>7: 00 pm</li>
-            </ol>
+            <div class="schedule-list">
+                <ol class="events">
+                    <li>Recepción</li>
+                    <li>Ceremonia</li>
+                    <li>Taquiza</li>
+                </ol>
+                <ol class="hours">
+                    <li>6: 00 pm</li>
+                    <li>6: 30 pm</li>
+                    <li>7: 00 pm</li>
+                </ol>
+            </div>
 
             <img class="plant eucalyptus-left" src="/plants/eucalyptus.svg" />
             <img class="plant eucalyptus-right" src="/plants/eucalyptus.svg" />
         </div>
+
         <div class="horizontal-divider"></div>
 
         <div class="info first-info">
@@ -101,7 +107,7 @@
 
         <div class="thanks">
             <p>¡Agradecemos que confirmes tu asistencia!</p>
-            
+
             <img class="plant peace-lily-leaves-left" src="/plants/peace-lily-leaves.svg" />
             <img class="plant peace-lily-leaves-right" src="/plants/peace-lily-leaves.svg" />
             <img class="plant bird-of-paradise" src="/plants/bird-of-paradise.svg" />
@@ -138,8 +144,8 @@
             let hoursLeft = 0;
             let minutesLeft = 0;
             let secondsLeft = 0;
-            let msLeft =  weddingDateTime - currentDateTime;
-            
+            let msLeft = weddingDateTime - currentDateTime;
+
             if (msLeft > day) {
                 daysLeft = Math.floor(msLeft / day);
                 msLeft = msLeft % day;
@@ -163,7 +169,7 @@
             daysDisplay.innerHTML = getTwoDigitsString(daysLeft);
             hoursDisplay.innerHTML = getTwoDigitsString(hoursLeft);
             minutesDisplay.innerHTML = getTwoDigitsString(minutesLeft);
-            secondsDisplay.innerHTML = getTwoDigitsString(secondsLeft); 
+            secondsDisplay.innerHTML = getTwoDigitsString(secondsLeft);
         }
 
         updateTimeLeft();
