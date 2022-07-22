@@ -311,6 +311,17 @@ main.paper-bg {
 }
 
 @media only screen and (max-width: 400px) {
+    .invitation-hero .vip-banner {
+        right: -80px;
+        top: 24px;
+    }
+    
+    .invitation-hero .vip-banner p {
+        letter-spacing: 3px;
+        font-size: 19px;
+        padding: 6px 100px;
+    }
+
     .invitation-hero h1 {
         font-size: 60px;
         margin: 140px 0 40px 0;
