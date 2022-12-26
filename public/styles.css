@@ -207,7 +207,7 @@ main.paper-bg {
 }
 
 .info.first-info {
-    padding: 40px 20px 20px 20px;
+    padding-top: 40px;
 }
 
 .info ul {
@@ -223,6 +223,22 @@ main.paper-bg {
 
 .info li span {
     font-weight: 600;
+}
+
+.btn {
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.75);
+    background: #B0B08E;
+    color: #333338;
+    cursor: pointer;
+    font-size: 14px;
+    
+    transition: all ease 0.5s;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 .picture-container {
@@ -269,6 +285,49 @@ main.paper-bg {
     font-size: 20px;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.60);
+}
+
+.modal {
+    background-color: #F5F5FA;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 250px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay.hidden,
+.modal.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.modal button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal p {
+    margin: 8px 0;
+}
+
 
 @media only screen and (max-width: 450px) {
     main.paper-bg {
@@ -307,6 +366,10 @@ main.paper-bg {
     .thanks p {
         max-width: 275px;
         font-size: 18px;
+    }
+
+    .modal {
+        width: 360px;
     }
 }
 
@@ -373,6 +436,10 @@ main.paper-bg {
         font-size: 13px;
         margin: 26px 0;
     }
+
+    .modal {
+        width: 320px;
+    }
 }
 
 @media only screen and (max-width: 350px) {
@@ -409,5 +476,9 @@ main.paper-bg {
     .thanks p {
         max-width: 250px;
         font-size: 16px;
+    }
+
+    .modal {
+        width: 290px;
     }
 }

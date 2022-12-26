@@ -65,8 +65,8 @@
                     <li>Taquiza</li>
                 </ol>
                 <ol class="hours">
-                    <li>6: 00 pm</li>
-                    <li>6: 30 pm</li>
+                    <li>4: 30 pm</li>
+                    <li>5: 30 pm</li>
                     <li>7: 00 pm</li>
                 </ol>
             </div>
@@ -120,6 +120,7 @@
                 <li>
                     No habrá mesa de regalos porque nos mudamos a Nueva Zelanda después de la boda,
                     en su lugar tendremos un buzón y sobres disponibles para regalos en efectivo.
+                    (Si lo prefieres, puedes hacer un deposito a <button class="btn" id="btnOpenModal">esta cuenta</button> ).
                 </li>
             </ul>
         </div>
@@ -138,9 +139,20 @@
             <img class="plant wildflower-2" src="/plants/wildflower-2.svg" />
             <img class="plant wildflower-3" src="/plants/wildflower-3.svg" />
         </div>
+
+        <div class="overlay hidden"></div>
+        <div class="modal hidden">
+            <button class="btn" id="btnCloseModal">X</button>
+            <p>HSBC</p>
+            <p>Raul Alfonso Sánchez Cayo</p>
+            <p>Clabe: 021320064369911807</p>
+            <p>Swift: BIMEMXMM</p>
+        </div>
     </main>
+   
     <script>
-        const weddingDateTime = new Date('2023-01-13T14:00:00-06:00');
+        // Timer
+        const weddingDateTime = new Date('2023-01-14T18:00:00-06:00');
 
         const daysDisplay = document.querySelector('.clock .days');
         const hoursDisplay = document.querySelector('.clock .hours');
@@ -197,6 +209,26 @@
         }
 
         updateTimeLeft();
+
+        // Modal
+        const btnOpenModal  = document.getElementById('btnOpenModal');
+        const btnCloseModal = document.getElementById('btnCloseModal');
+        const overlay = document.querySelector('.overlay');
+        const modal = document.querySelector('.modal');
+
+        function openModal() {
+            overlay.classList.remove('hidden');
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal () {
+            overlay.classList.add('hidden');
+            modal.classList.add('hidden');
+        }
+
+        btnOpenModal.onclick = openModal;
+        btnCloseModal.onclick = closeModal;
+        overlay.onclick = closeModal;
     </script>
 </body>
 
